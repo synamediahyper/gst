@@ -1,0 +1,12 @@
+prefix=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build
+srcdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstapp
+Description: gst-plugins-base: gstapp
+Version: 1.18.1
+Requires.private: gstreamer-base-1.0 >=  1.18.0, zlib
+Libs: -L${prefix}/gst/app -lgstapp -L${prefix}/gst-libs/gst/tag -lgsttag-1.0 -L${prefix}/gst-libs/gst/app -lgstapp-1.0
+Libs.private: -lm
+Cflags: -I${prefix}/gst/app -I${srcdir}/gst/app -I${prefix}/. -I${srcdir}/. -I${prefix}/gst-libs -I${srcdir}/gst-libs -I${prefix}/gst-libs/gst/tag -I${srcdir}/gst-libs/gst/tag -I${prefix}/gst-libs/gst/app -I${srcdir}/gst-libs/gst/app

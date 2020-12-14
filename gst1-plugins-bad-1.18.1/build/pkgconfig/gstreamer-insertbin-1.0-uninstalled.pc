@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/gst-libs/gst/insertbin
+includedir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/pkgconfig/../gst-libs
+
+Name: GStreamer Insert Bin, Uninstalled
+Description: Bin to automatically and insertally link elements, uninstalled
+Requires: gstreamer-1.0
+Version: 1.18.1
+Libs: -L${libdir} -lgstinsertbin-1.0
+Cflags: -I/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/pkgconfig/../gst-libs -I/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/pkgconfig/../gst-libs
+

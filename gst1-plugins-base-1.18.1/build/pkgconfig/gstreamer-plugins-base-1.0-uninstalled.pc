@@ -1,0 +1,16 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/pkgconfig/../gst-libs
+pluginsdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/pkgconfig/..
+
+Name: GStreamer Base Plugins Libraries, Uninstalled
+Description: Streaming media framework, base plugins libraries, uninstalled
+Version: 1.18.1
+Requires: gstreamer-1.0
+Libs: -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/allocators -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/app -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/audio -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/fft -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/pbutils -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/riff -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/rtp -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/rtsp -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/sdp -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/tag -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/video 
+Cflags: -I/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/pkgconfig/../gst-libs -I/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/pkgconfig/../gst-libs
+
+libraries=allocators app audio fft pbutils riff rtp rtsp sdp tag video 

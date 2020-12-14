@@ -1,0 +1,21 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/gst
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/pkgconfig/..
+toolsdir=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/pkgconfig/../tools
+pluginsdir=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/pkgconfig/../plugins
+girdir=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/pkgconfig/../gst
+bashhelpersdir=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/pkgconfig/../data/bash-completion/helpers
+helpersdir=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/pkgconfig/../libs/gst/helpers
+typelibdir=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/pkgconfig/../gst
+pluginscannerdir=${helpersdir}
+
+Name: GStreamer Uninstalled
+Description: Streaming media framework, Not Installed
+Version: 1.18.1
+Requires: glib-2.0, gobject-2.0
+Requires.private: gmodule-no-export-2.0  
+Libs: -L${libdir} -lgstreamer-1.0
+Cflags: -I/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/pkgconfig/.. -I/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/pkgconfig/../libs -I/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/pkgconfig/.. -I/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/pkgconfig/../libs

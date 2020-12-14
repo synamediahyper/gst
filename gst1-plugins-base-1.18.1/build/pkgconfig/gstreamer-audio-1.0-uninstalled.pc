@@ -1,0 +1,17 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/audio
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/pkgconfig/../gst-libs
+girdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/pkgconfig/../gst-libs/gst/audio
+typelibdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/pkgconfig/../gst-libs/gst/audio
+
+Name: GStreamer Audio Library, Uninstalled
+Description: Audio helper functions and base classes, uninstalled
+Version: 1.18.1
+Requires: gstreamer-1.0 gstreamer-base-1.0 gstreamer-tag-1.0
+Requires.private: 
+Libs: -L${libdir} -lgstaudio-1.0
+Cflags: -I/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/pkgconfig/../gst-libs -I/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/pkgconfig/../gst-libs
+

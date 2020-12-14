@@ -1,0 +1,11 @@
+prefix=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build
+srcdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstdtls
+Description: gst-plugins-bad: gstdtls
+Version: 1.18.1
+Requires.private: gstreamer-1.0 >=  1.18.0, libcrypto, openssl >=  1.0.1
+Libs: -L${prefix}/ext/dtls -lgstdtls
+Cflags: -I${prefix}/ext/dtls -I${srcdir}/ext/dtls -I${prefix}/. -I${srcdir}/.

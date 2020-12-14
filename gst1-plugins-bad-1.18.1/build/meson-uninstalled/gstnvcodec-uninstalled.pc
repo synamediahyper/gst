@@ -1,0 +1,12 @@
+prefix=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build
+srcdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstnvcodec
+Description: gst-plugins-bad: gstnvcodec
+Version: 1.18.1
+Requires.private: gstreamer-base-1.0 >=  1.18.0, gstreamer-video-1.0 >=  1.18.0, gstreamer-pbutils-1.0 >=  1.18.0, gmodule-2.0
+Libs: -L${prefix}/sys/nvcodec -lgstnvcodec -L${prefix}/gst-libs/gst/codecparsers -lgstcodecparsers-1.0 -L${prefix}/gst-libs/gst/codecs -lgstcodecs-1.0
+Libs.private: -lm
+Cflags: -I${prefix}/sys/nvcodec -I${srcdir}/sys/nvcodec -I${prefix}/. -I${srcdir}/. -I${prefix}/sys/nvcodec/./stub -I${srcdir}/sys/nvcodec/./stub -I${prefix}/gst-libs -I${srcdir}/gst-libs -I${prefix}/gst-libs/gst/codecparsers -I${srcdir}/gst-libs/gst/codecparsers -I${prefix}/gst-libs/gst/codecs -I${srcdir}/gst-libs/gst/codecs

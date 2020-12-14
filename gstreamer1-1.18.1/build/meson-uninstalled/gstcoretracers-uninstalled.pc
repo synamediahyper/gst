@@ -1,0 +1,12 @@
+prefix=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build
+srcdir=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstcoretracers
+Description: gstreamer: gstcoretracers
+Version: 1.18.1
+Requires.private: gobject-2.0, gmodule-2.0, glib-2.0 >= 2.44.0
+Libs: -L${prefix}/plugins/tracers -lgstcoretracers -L${prefix}/gst -lgstreamer-1.0
+Libs.private: -pthread -lm -ldl
+Cflags: -I${prefix}/plugins/tracers -I${srcdir}/plugins/tracers -I${prefix}/. -I${srcdir}/. -I${prefix}/gst -I${srcdir}/gst -I${prefix}/gst/parse -I${srcdir}/gst/parse

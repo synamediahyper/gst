@@ -1,0 +1,12 @@
+prefix=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build
+srcdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstpbtypes
+Description: gst-plugins-base: gstpbtypes
+Version: 1.18.1
+Requires.private: gstreamer-base-1.0 >=  1.18.0
+Libs: -L${prefix}/gst/pbtypes -lgstpbtypes -L${prefix}/gst-libs/gst/video -lgstvideo-1.0
+Libs.private: -lm
+Cflags: -I${prefix}/gst/pbtypes -I${srcdir}/gst/pbtypes -I${prefix}/. -I${srcdir}/. -I${prefix}/gst-libs -I${srcdir}/gst-libs -I${prefix}/gst-libs/gst/video -I${srcdir}/gst-libs/gst/video

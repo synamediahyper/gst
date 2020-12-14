@@ -1,0 +1,2018 @@
+Build started at 2020-12-13T09:52:13.830404
+Main binary: /home/user/hyperscale/buildroot/output/host/bin/python3
+Build Options: -Dbuild.pkg_config_path=/home/user/hyperscale/buildroot/output/host/lib/pkgconfig -Dexamples=disabled -Dtests=disabled -Dgobject-cast-checks=disabled -Dglib-asserts=disabled -Dglib-checks=disabled -Ddoc=disabled -Dcdparanoia=disabled -Dlibvisual=disabled -Diso-codes=disabled -Dtools=disabled -Dintrospection=disabled -Dorc=disabled -Dgl=disabled -Dgl_api= -Dgl_platform= -Dgl_winsys= -Dadder=disabled -Dapp=enabled -Daudioconvert=disabled -Daudiomixer=disabled -Daudiorate=disabled -Daudiotestsrc=disabled -Dcompositor=disabled -Dencoding=disabled -Dvideoconvert=disabled -Dgio=disabled -Dgio-typefinder=disabled -Doverlaycomposition=disabled -Dplayback=disabled -Daudioresample=disabled -Drawparse=disabled -Dsubparse=disabled -Dtcp=disabled -Dtypefind=disabled -Dvideotestsrc=disabled -Dvideorate=disabled -Dvideoscale=disabled -Dvolume=disabled -Dx11=disabled -Dxshm=disabled -Dxvideo=disabled -Dalsa=disabled -Dtremor=disabled -Dopus=disabled -Dogg=disabled -Dpango=disabled -Dtheora=disabled -Dvorbis=disabled -Dprefix=/usr -Dlibdir=lib -Dbuildtype=release -Ddefault_library=static '--cross-file /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1//build/cross-compilation.conf'
+Python system: Linux
+The Meson build system
+Version: 0.56.0
+Source dir: /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1
+Build dir: /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build
+Build type: cross build
+Project name: gst-plugins-base
+Project version: 1.18.1
+None of 'CFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc
+Is cross compiler: True.
+Sanity check compiler command line: /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/sanitycheckc.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/sanitycheckc_cross.exe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -static -pipe -D_FILE_OFFSET_BITS=64 -c
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+C compiler for the host machine: /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc (gcc 6.3.0 "csky-linux-gcc (C-SKY Tools V3.10.7 uClibc-ng-1.0.29 Linux-4.9.56 abiv1 B20190605) 6.3.0")
+C linker for the host machine: /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc ld.bfd 2.27
+None of 'CC_FOR_BUILD' are defined in the environment, not changing global flags.
+None of 'CFLAGS_FOR_BUILD' are defined in the environment, not changing global flags.
+None of 'LDFLAGS_FOR_BUILD' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS_FOR_BUILD' are defined in the environment, not changing global flags.
+None of 'CC_LD_FOR_BUILD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+None of 'CC_LD_FOR_BUILD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: ccache cc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/sanitycheckc.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: ccache cc (gcc 9.3.0 "cc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0")
+C linker for the build machine: cc ld.bfd 2.34
+None of 'AR_FOR_BUILD' are defined in the environment, not changing global flags.
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: csky
+Target machine cpu: ck610
+WARNING: Project targeting '>= 0.48' but tried to use feature introduced in '0.54.0': native arg in add_languages.
+None of 'CXXFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CXX_LD' are defined in the environment, not changing global flags.
+Sanity testing C++ compiler: /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++
+Is cross compiler: True.
+Sanity check compiler command line: /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/sanitycheckcpp.cc -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/sanitycheckcpp_cross.exe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -static -static -pipe -D_FILE_OFFSET_BITS=64 -c
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+C++ compiler for the host machine: /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ (gcc 6.3.0 "csky-linux-g++ (C-SKY Tools V3.10.7 uClibc-ng-1.0.29 Linux-4.9.56 abiv1 B20190605) 6.3.0")
+C++ linker for the host machine: /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ ld.bfd 2.27
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp60l5whku
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp60l5whku/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp60l5whku/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,-Bsymbolic-functions 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports link arguments -Wl,-Bsymbolic-functions: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmph6aa1a9t
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmph6aa1a9t/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmph6aa1a9t/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -fvisibility=hidden 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmprwxqkoau
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmprwxqkoau/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmprwxqkoau/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -fno-strict-aliasing 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-strict-aliasing: YES 
+Message: Disabling GLib cast checks
+Message: Disabling GLib asserts
+Message: Disabling GLib checks
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp1mazyc9r
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp1mazyc9r/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("dlfcn.h")
+          #error "Header 'dlfcn.h' could not be found"
+         #endif
+        #else
+         #include <dlfcn.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "dlfcn.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp2fli11qr
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp2fli11qr/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("emmintrin.h")
+          #error "Header 'emmintrin.h' could not be found"
+         #endif
+        #else
+         #include <emmintrin.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp2fli11qr/testfile.c:4:12: error: #error "Header 'emmintrin.h' could not be found"
+           #error "Header 'emmintrin.h' could not be found"
+            ^~~~~
+
+Has header "emmintrin.h" : NO 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpz6ulj42i
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpz6ulj42i/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("inttypes.h")
+          #error "Header 'inttypes.h' could not be found"
+         #endif
+        #else
+         #include <inttypes.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "inttypes.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpagi313se
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpagi313se/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("memory.h")
+          #error "Header 'memory.h' could not be found"
+         #endif
+        #else
+         #include <memory.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "memory.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmph9eciggo
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmph9eciggo/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/in.h")
+          #error "Header 'netinet/in.h' could not be found"
+         #endif
+        #else
+         #include <netinet/in.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/in.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpu6u1w_w3
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpu6u1w_w3/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("netinet/tcp.h")
+          #error "Header 'netinet/tcp.h' could not be found"
+         #endif
+        #else
+         #include <netinet/tcp.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "netinet/tcp.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmppk9_7h5v
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmppk9_7h5v/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("process.h")
+          #error "Header 'process.h' could not be found"
+         #endif
+        #else
+         #include <process.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmppk9_7h5v/testfile.c:4:12: error: #error "Header 'process.h' could not be found"
+           #error "Header 'process.h' could not be found"
+            ^~~~~
+
+Has header "process.h" : NO 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpas1y78be
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpas1y78be/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("smmintrin.h")
+          #error "Header 'smmintrin.h' could not be found"
+         #endif
+        #else
+         #include <smmintrin.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpas1y78be/testfile.c:4:12: error: #error "Header 'smmintrin.h' could not be found"
+           #error "Header 'smmintrin.h' could not be found"
+            ^~~~~
+
+Has header "smmintrin.h" : NO 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3pbpg1rl
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3pbpg1rl/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stdint.h")
+          #error "Header 'stdint.h' could not be found"
+         #endif
+        #else
+         #include <stdint.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "stdint.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmps7jooktf
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmps7jooktf/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("strings.h")
+          #error "Header 'strings.h' could not be found"
+         #endif
+        #else
+         #include <strings.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "strings.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp34wi29mi
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp34wi29mi/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("string.h")
+          #error "Header 'string.h' could not be found"
+         #endif
+        #else
+         #include <string.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "string.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpn9_jyr41
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpn9_jyr41/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/socket.h")
+          #error "Header 'sys/socket.h' could not be found"
+         #endif
+        #else
+         #include <sys/socket.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/socket.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpwaew4y_a
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpwaew4y_a/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/stat.h")
+          #error "Header 'sys/stat.h' could not be found"
+         #endif
+        #else
+         #include <sys/stat.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/stat.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp_q4pwapb
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp_q4pwapb/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/types.h")
+          #error "Header 'sys/types.h' could not be found"
+         #endif
+        #else
+         #include <sys/types.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/types.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp4ftpxpwq
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp4ftpxpwq/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/wait.h")
+          #error "Header 'sys/wait.h' could not be found"
+         #endif
+        #else
+         #include <sys/wait.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/wait.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp1k4eta7z
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp1k4eta7z/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("unistd.h")
+          #error "Header 'unistd.h' could not be found"
+         #endif
+        #else
+         #include <unistd.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "unistd.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3d21t25g
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3d21t25g/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("winsock2.h")
+          #error "Header 'winsock2.h' could not be found"
+         #endif
+        #else
+         #include <winsock2.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3d21t25g/testfile.c:4:12: error: #error "Header 'winsock2.h' could not be found"
+           #error "Header 'winsock2.h' could not be found"
+            ^~~~~
+
+Has header "winsock2.h" : NO 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbc6b7dfj
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbc6b7dfj/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("xmmintrin.h")
+          #error "Header 'xmmintrin.h' could not be found"
+         #endif
+        #else
+         #include <xmmintrin.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbc6b7dfj/testfile.c:4:12: error: #error "Header 'xmmintrin.h' could not be found"
+           #error "Header 'xmmintrin.h' could not be found"
+            ^~~~~
+
+Has header "xmmintrin.h" : NO 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp38wps05d
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp38wps05d/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("linux/dma-buf.h")
+          #error "Header 'linux/dma-buf.h' could not be found"
+         #endif
+        #else
+         #include <linux/dma-buf.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp38wps05d/testfile.c:4:12: error: #error "Header 'linux/dma-buf.h' could not be found"
+           #error "Header 'linux/dma-buf.h' could not be found"
+            ^~~~~
+
+Has header "linux/dma-buf.h" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpj_ozvx9y
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpj_ozvx9y/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpj_ozvx9y/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3_nq0a75
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3_nq0a75/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3_nq0a75/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group 
+
+Code:
+ #include<libintl.h>
+#include <limits.h>
+
+        #if defined __stub_dcgettext || defined __stub___dcgettext
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &dcgettext;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3_nq0a75/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3_nq0a75/testfile.c:10:27: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+             long long b = (long long) a;
+                           ^
+
+Checking for function "dcgettext" with dependency -lm: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpdcz67j7l
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpdcz67j7l/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpdcz67j7l/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group 
+
+Code:
+ #include<time.h>
+#include <limits.h>
+
+        #if defined __stub_gmtime_r || defined __stub___gmtime_r
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &gmtime_r;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpdcz67j7l/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpdcz67j7l/testfile.c:10:27: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+             long long b = (long long) a;
+                           ^
+
+Checking for function "gmtime_r" with dependency -lm: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpga9cu4t2
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpga9cu4t2/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpga9cu4t2/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group 
+
+Code:
+ #include<time.h>
+#include <limits.h>
+
+        #if defined __stub_localtime_r || defined __stub___localtime_r
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &localtime_r;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpga9cu4t2/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpga9cu4t2/testfile.c:10:27: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+             long long b = (long long) a;
+                           ^
+
+Checking for function "localtime_r" with dependency -lm: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbp61bg28
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbp61bg28/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbp61bg28/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group 
+
+Code:
+ #include<math.h>
+#include <limits.h>
+
+        #if defined __stub_lrintf || defined __stub___lrintf
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &lrintf;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbp61bg28/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbp61bg28/testfile.c:10:27: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+             long long b = (long long) a;
+                           ^
+
+Checking for function "lrintf" with dependency -lm: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmppgshdugc
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmppgshdugc/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmppgshdugc/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group 
+
+Code:
+ #include<sys/mman.h>
+#include <limits.h>
+
+        #if defined __stub_mmap || defined __stub___mmap
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &mmap;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmppgshdugc/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmppgshdugc/testfile.c:10:27: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+             long long b = (long long) a;
+                           ^
+
+Checking for function "mmap" with dependency -lm: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3te787nc
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3te787nc/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3te787nc/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group 
+
+Code:
+ #include<math.h>
+#include <limits.h>
+
+        #if defined __stub_log2 || defined __stub___log2
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &log2;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3te787nc/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3te787nc/testfile.c:10:27: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+             long long b = (long long) a;
+                           ^
+
+Checking for function "log2" with dependency -lm: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpydp22lfo
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpydp22lfo/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpydp22lfo/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) {
+            char something;
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp5g5_chds
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp5g5_chds/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp5g5_chds/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(char) >= 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp2gsi8f7t
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp2gsi8f7t/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp2gsi8f7t/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(char) > 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpfrze7w54
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpfrze7w54/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpfrze7w54/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(char) > 1)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpfrze7w54/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpfrze7w54/testfile.c:3:37: error: size of array 'a' is negative
+         int main(void) { static int a[1-2*!(sizeof(char) > 1)]; a[0]=0; return 0; }
+                                     ^
+
+Checking for size of "char" : 1
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpx96sb8d0
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpx96sb8d0/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpx96sb8d0/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) {
+            int something;
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpwxttu_23
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpwxttu_23/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpwxttu_23/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(int) >= 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmphukg6yod
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmphukg6yod/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmphukg6yod/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(int) > 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp5nncfboe
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp5nncfboe/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp5nncfboe/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(int) > 1)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpm1w01fdw
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpm1w01fdw/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpm1w01fdw/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(int) > 3)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpi4awfff2
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpi4awfff2/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpi4awfff2/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(int) > 7)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpi4awfff2/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpi4awfff2/testfile.c:3:37: error: size of array 'a' is negative
+         int main(void) { static int a[1-2*!(sizeof(int) > 7)]; a[0]=0; return 0; }
+                                     ^
+
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpmutskwi9
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpmutskwi9/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpmutskwi9/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(int) <= 5)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp7guaz7ph
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp7guaz7ph/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp7guaz7ph/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(int) <= 4)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for size of "int" : 4
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpvugih2cl
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpvugih2cl/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpvugih2cl/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) {
+            long something;
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpy5rz6fd5
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpy5rz6fd5/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpy5rz6fd5/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(long) >= 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp7x65fg4m
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp7x65fg4m/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp7x65fg4m/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(long) > 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpnzsbvkjb
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpnzsbvkjb/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpnzsbvkjb/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(long) > 1)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpgeq4taaq
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpgeq4taaq/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpgeq4taaq/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(long) > 3)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3qj46dvb
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3qj46dvb/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3qj46dvb/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(long) > 7)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3qj46dvb/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3qj46dvb/testfile.c:3:37: error: size of array 'a' is negative
+         int main(void) { static int a[1-2*!(sizeof(long) > 7)]; a[0]=0; return 0; }
+                                     ^
+
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp40dukdxu
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp40dukdxu/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp40dukdxu/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(long) <= 5)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpfq4vz5v3
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpfq4vz5v3/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpfq4vz5v3/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(long) <= 4)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for size of "long" : 4
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpc7pxgr2f
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpc7pxgr2f/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpc7pxgr2f/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) {
+            short something;
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq4x4jvil
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq4x4jvil/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq4x4jvil/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(short) >= 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp1wiiri19
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp1wiiri19/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp1wiiri19/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(short) > 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp4ilcy1qx
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp4ilcy1qx/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp4ilcy1qx/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(short) > 1)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq2vs4hwl
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq2vs4hwl/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq2vs4hwl/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(short) > 3)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq2vs4hwl/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq2vs4hwl/testfile.c:3:37: error: size of array 'a' is negative
+         int main(void) { static int a[1-2*!(sizeof(short) > 3)]; a[0]=0; return 0; }
+                                     ^
+
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpjdks6n0k
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpjdks6n0k/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpjdks6n0k/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(short) <= 2)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for size of "short" : 2
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmppkp3tzy7
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmppkp3tzy7/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmppkp3tzy7/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) {
+            void* something;
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq2iv5gv8
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq2iv5gv8/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq2iv5gv8/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void*) >= 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpod7bpf39
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpod7bpf39/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpod7bpf39/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void*) > 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpw14mr7vx
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpw14mr7vx/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpw14mr7vx/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void*) > 1)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpmbfq6hlg
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpmbfq6hlg/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpmbfq6hlg/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void*) > 3)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp29uko0ad
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp29uko0ad/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp29uko0ad/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void*) > 7)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp29uko0ad/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp29uko0ad/testfile.c:3:37: error: size of array 'a' is negative
+         int main(void) { static int a[1-2*!(sizeof(void*) > 7)]; a[0]=0; return 0; }
+                                     ^
+
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp9a8aop_v
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp9a8aop_v/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp9a8aop_v/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void*) <= 5)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpiyma6zxg
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpiyma6zxg/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpiyma6zxg/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void*) <= 4)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for size of "void*" : 4
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp4it5gxb2
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp4it5gxb2/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp4it5gxb2/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Waggregate-return 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Waggregate-return: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpsc4p546g
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpsc4p546g/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpsc4p546g/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-declarations 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp7a9y3ljv
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp7a9y3ljv/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp7a9y3ljv/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wmissing-declarations 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wmissing-declarations: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpby72w54c
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpby72w54c/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpby72w54c/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wredundant-decls 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wredundant-decls: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpkexuokkb
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpkexuokkb/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpkexuokkb/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wredundant-decls 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wredundant-decls: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp9pdiiesm
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp9pdiiesm/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp9pdiiesm/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wundef 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wundef: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp6lzmjmpz
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp6lzmjmpz/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp6lzmjmpz/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wundef 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wundef: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq0dlvc4i
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq0dlvc4i/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpq0dlvc4i/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wwrite-strings 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpyp0yv3hg
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpyp0yv3hg/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpyp0yv3hg/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wwrite-strings 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wwrite-strings: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpvl4liyau
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpvl4liyau/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpvl4liyau/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wformat 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wformat: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpyp281fqn
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpyp281fqn/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpyp281fqn/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wformat 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wformat: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpllf8mk59
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpllf8mk59/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpllf8mk59/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wformat-nonliteral 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1: warning: -Wformat-nonliteral ignored without -Wformat [-Wformat-nonliteral]
+
+Compiler for C supports arguments -Wformat-nonliteral: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp78hsldxg
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp78hsldxg/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp78hsldxg/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wformat-nonliteral 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1plus: warning: -Wformat-nonliteral ignored without -Wformat [-Wformat-nonliteral]
+
+Compiler for C++ supports arguments -Wformat-nonliteral: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp663jz1kf
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp663jz1kf/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp663jz1kf/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wformat-security 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1: warning: -Wformat-security ignored without -Wformat [-Wformat-security]
+
+Compiler for C supports arguments -Wformat-security: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpf60u1xyo
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpf60u1xyo/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpf60u1xyo/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wformat-security 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1plus: warning: -Wformat-security ignored without -Wformat [-Wformat-security]
+
+Compiler for C++ supports arguments -Wformat-security: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp7hchfbgk
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp7hchfbgk/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp7hchfbgk/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Winit-self 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Winit-self: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3g1q6e9k
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3g1q6e9k/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3g1q6e9k/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Winit-self 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Winit-self: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp0ca7_7je
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp0ca7_7je/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp0ca7_7je/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-include-dirs 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-include-dirs: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp19sp6s9y
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp19sp6s9y/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp19sp6s9y/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wmissing-include-dirs 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wmissing-include-dirs: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpnxy3yqom
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpnxy3yqom/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpnxy3yqom/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Waddress 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Waddress: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp6pm_24nm
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp6pm_24nm/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp6pm_24nm/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Waddress 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Waddress: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpluwb73cq
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpluwb73cq/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpluwb73cq/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wmultichar -Wno-multichar 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-multichar: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp9q29p8kr
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp9q29p8kr/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp9q29p8kr/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wmultichar -Wno-multichar 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wno-multichar: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp_h0xediw
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp_h0xediw/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp_h0xediw/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wvla 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wvla: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpfihd5oq3
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpfihd5oq3/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpfihd5oq3/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wvla 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wvla: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmptb7veb8q
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmptb7veb8q/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmptb7veb8q/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-arith 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wpointer-arith: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpz_n7s0qh
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpz_n7s0qh/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpz_n7s0qh/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive -Wpointer-arith 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C++ supports arguments -Wpointer-arith: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpoagpjcjt
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpoagpjcjt/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpoagpjcjt/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbzd1df4r
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbzd1df4r/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbzd1df4r/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wdeclaration-after-statement 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Dependency x11 skipped: feature x11 disabled
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary for 1 specified from cross file, native file, or env var as ['/home/user/hyperscale/buildroot/output/host/bin/pkgconf']
+Found pkg-config: /home/user/hyperscale/buildroot/output/host/bin/pkgconf (1.6.1)
+Determining dependency 'glib-2.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion glib-2.0` -> 0
+2.64.4
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags glib-2.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf glib-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf glib-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpwogqqy84
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpwogqqy84/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpwogqqy84/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) {
+            void * something;
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpdjm9sx4x
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpdjm9sx4x/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpdjm9sx4x/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) >= 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3sacvuh_
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3sacvuh_/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp3sacvuh_/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) > 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp0xsfaja3
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp0xsfaja3/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp0xsfaja3/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) > 1)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbqldrwrt
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbqldrwrt/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpbqldrwrt/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) > 3)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpz8r3jr09
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpz8r3jr09/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpz8r3jr09/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) > 7)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpz8r3jr09/testfile.cpp: In function 'int main()':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpz8r3jr09/testfile.cpp:3:64: error: size of array 'a' is negative
+         int main(void) { static int a[1-2*!(sizeof(void *) > 7)]; a[0]=0; return 0; }
+                                                                ^
+
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp6lcniohf
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp6lcniohf/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp6lcniohf/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) <= 5)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp74f1z6yo
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp74f1z6yo/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp74f1z6yo/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) <= 4)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmporrzzwir
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-g++ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmporrzzwir/testfile.cpp -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmporrzzwir/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -static -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/
+programs: =/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../libexec/gcc/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../libexec/gcc/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/bin/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/bin/
+libraries: =/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/lib/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/lib/:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/.//lib/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/.//lib/:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/.//usr/lib/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/.//usr/lib/
+
+Compiler stderr:
+ 
+Run-time dependency glib-2.0 found: YES 2.64.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gobject-2.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion gobject-2.0` -> 0
+2.64.4
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags gobject-2.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gobject-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgobject-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gobject-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgobject-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency gobject-2.0 found: YES 2.64.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gio-2.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion gio-2.0` -> 0
+2.64.4
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags gio-2.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -pthread -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gio-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgio-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lz
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gio-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgio-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lz
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency gio-2.0 found: YES 2.64.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gio-unix-2.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion gio-unix-2.0` -> 0
+2.64.4
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags gio-unix-2.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/gio-unix-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -pthread -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gio-unix-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgio-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lz
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gio-unix-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgio-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lz
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency gio-unix-2.0 found: YES 2.64.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gmodule-no-export-2.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion gmodule-no-export-2.0` -> 0
+2.64.4
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags gmodule-no-export-2.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -pthread -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gmodule-no-export-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gmodule-no-export-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency gmodule-no-export-2.0 found: YES 2.64.4
+Dependency gdk-pixbuf-2.0 skipped: feature examples disabled
+Dependency gtk+-3.0 skipped: feature examples disabled
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --variable=giomoduledir gio-2.0` -> 0
+/usr/lib/gio/modules
+Got pkgconfig variable giomoduledir : /usr/lib/gio/modules
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --variable=libdir gio-2.0` -> 0
+/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib
+Got pkgconfig variable libdir : /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --variable=prefix gio-2.0` -> 0
+/usr
+Got pkgconfig variable prefix : /usr
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gstreamer-1.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion gstreamer-1.0` -> 0
+1.18.1
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags gstreamer-1.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/gstreamer-1.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -pthread -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gstreamer-1.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgstreamer-1.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgmodule-2.0 -pthread -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gstreamer-1.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgstreamer-1.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgmodule-2.0 -pthread -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency gstreamer-1.0 found: YES 1.18.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gstreamer-base-1.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion gstreamer-base-1.0` -> 0
+1.18.1
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags gstreamer-base-1.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/gstreamer-1.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -pthread -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gstreamer-base-1.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgstbase-1.0 -lgstreamer-1.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgmodule-2.0 -pthread -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gstreamer-base-1.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgstbase-1.0 -lgstreamer-1.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgmodule-2.0 -pthread -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency gstreamer-base-1.0 found: YES 1.18.1
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gstreamer-net-1.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion gstreamer-net-1.0` -> 0
+1.18.1
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags gstreamer-net-1.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/gstreamer-1.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -DPCRE_STATIC -pthread -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gstreamer-net-1.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgstnet-1.0 -lgstreamer-1.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -pthread -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgio-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lz
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gstreamer-net-1.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgstnet-1.0 -lgstreamer-1.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -pthread -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgio-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lz
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency gstreamer-net-1.0 found: YES 1.18.1
+Dependency gstreamer-check-1.0 skipped: feature tests disabled
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gstreamer-controller-1.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion gstreamer-controller-1.0` -> 0
+1.18.1
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags gstreamer-controller-1.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/gstreamer-1.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -pthread -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gstreamer-controller-1.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgstcontroller-1.0 -lgstreamer-1.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgmodule-2.0 -pthread -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gstreamer-controller-1.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgstcontroller-1.0 -lgstreamer-1.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgmodule-2.0 -pthread -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency gstreamer-controller-1.0 found: YES 1.18.1
+Dependency orc-0.4 skipped: feature orc disabled
+Program orcc skipped: feature orc disabled
+Message: Orc Compiler not found or disabled, will use backup C code
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp_19dedat
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp_19dedat/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp_19dedat/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -msse 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ csky-linux-gcc: error: unrecognized command line option '-msse'; did you mean '-fdse'?
+
+Compiler for C supports arguments -msse: NO 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpt6nidb1e
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpt6nidb1e/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpt6nidb1e/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -msse2 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ csky-linux-gcc: error: unrecognized command line option '-msse2'
+
+Compiler for C supports arguments -msse2: NO 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp_aflav2m
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp_aflav2m/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp_aflav2m/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -msse4.1 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ csky-linux-gcc: error: unrecognized command line option '-msse4.1'
+
+Compiler for C supports arguments -msse4.1: NO 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpzspo0l3t
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/gstreamer-1.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpzspo0l3t/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpzspo0l3t/output.obj -pipe -c -pthread -DPCRE_STATIC -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+#include <gst/gstconfig.h>
+#ifdef GST_DISABLE_GST_DEBUG
+#error "debugging disabled, make compiler fail"
+#endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Message: GStreamer debug system is enabled
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpgml9_em6
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpgml9_em6/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpgml9_em6/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <netinet/tcp.h>
+        void bar(void) {
+            struct tcp_info foo;
+            foo.__tcpi_reordering;
+
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpgml9_em6/testfile.c: In function 'bar':
+/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpgml9_em6/testfile.c:4:16: error: 'struct tcp_info' has no member named '__tcpi_reordering'; did you mean 'tcpi_reordering'?
+             foo.__tcpi_reordering;
+                ^
+
+Checking whether type "struct tcp_info" has member "__tcpi_reordering" : NO 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp9eiboxlo
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp9eiboxlo/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmp9eiboxlo/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <netinet/tcp.h>
+        void bar(void) {
+            struct tcp_info foo;
+            foo.tcpi_reordering;
+
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking whether type "struct tcp_info" has member "tcpi_reordering" : YES 
+Program g-ir-scanner skipped: feature introspection disabled
+Program python3 found: YES (/home/user/hyperscale/buildroot/output/host/bin/python3)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Dependency iso-codes skipped: feature iso-codes disabled
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'zlib' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion zlib` -> 0
+1.2.11
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags zlib` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf zlib --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lz
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf zlib --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lz
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency zlib found: YES 1.2.11
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Configuring gstpluginsbaseversion.h using configuration
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Message: GStreamer OpenGL integration disabled via options.
+Dependency alsa skipped: feature alsa disabled
+Dependency libvisual-0.4 skipped: feature libvisual disabled
+Dependency ogg skipped: feature ogg disabled
+Dependency opus skipped: feature opus disabled
+Dependency pangocairo skipped: feature pango disabled
+Dependency theoradec skipped: feature theora disabled
+Dependency theoraenc skipped: feature theora disabled
+Dependency vorbis skipped: feature vorbis disabled
+Dependency vorbisenc skipped: feature vorbis disabled
+Dependency vorbisidec skipped: feature tremor disabled
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --variable=pluginsdir gstreamer-1.0` -> 0
+/usr/lib/gstreamer-1.0
+Got pkgconfig variable pluginsdir : /usr/lib/gstreamer-1.0
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --variable=pluginscannerdir gstreamer-1.0` -> 0
+/usr/libexec/gstreamer-1.0
+Got pkgconfig variable pluginscannerdir : /usr/libexec/gstreamer-1.0
+Configuring gstreamer-allocators-1.0.pc using configuration
+Configuring gstreamer-allocators-1.0-uninstalled.pc using configuration
+Configuring gstreamer-app-1.0.pc using configuration
+Configuring gstreamer-app-1.0-uninstalled.pc using configuration
+Configuring gstreamer-audio-1.0.pc using configuration
+Configuring gstreamer-audio-1.0-uninstalled.pc using configuration
+Configuring gstreamer-fft-1.0.pc using configuration
+Configuring gstreamer-fft-1.0-uninstalled.pc using configuration
+Configuring gstreamer-pbutils-1.0.pc using configuration
+Configuring gstreamer-pbutils-1.0-uninstalled.pc using configuration
+Configuring gstreamer-plugins-base-1.0.pc using configuration
+Configuring gstreamer-plugins-base-1.0-uninstalled.pc using configuration
+Configuring gstreamer-riff-1.0.pc using configuration
+Configuring gstreamer-riff-1.0-uninstalled.pc using configuration
+Configuring gstreamer-rtp-1.0.pc using configuration
+Configuring gstreamer-rtp-1.0-uninstalled.pc using configuration
+Configuring gstreamer-rtsp-1.0.pc using configuration
+Configuring gstreamer-rtsp-1.0-uninstalled.pc using configuration
+Configuring gstreamer-sdp-1.0.pc using configuration
+Configuring gstreamer-sdp-1.0-uninstalled.pc using configuration
+Configuring gstreamer-tag-1.0.pc using configuration
+Configuring gstreamer-tag-1.0-uninstalled.pc using configuration
+Configuring gstreamer-video-1.0.pc using configuration
+Configuring gstreamer-video-1.0-uninstalled.pc using configuration
+Program xgettext found: YES (/home/user/hyperscale/buildroot/output/host/bin/xgettext)
+Message: Documentation not built as building it while cross building is not supported yet.
+Program dist-translations.py found: YES (/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/scripts/dist-translations.py)
+Program scripts/extract-release-date-from-doap-file.py found: YES (/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/scripts/extract-release-date-from-doap-file.py)
+Running command: /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/scripts/extract-release-date-from-doap-file.py 1.18.1 /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/gst-plugins-base.doap
+--- stdout ---
+2020-10-26
+
+--- stderr ---
+
+
+Message: Package release date: 2020-10-26
+Configuring config.h using configuration
+Running command: /home/user/hyperscale/buildroot/output/host/bin/python3 -c import shutil; shutil.copy("hooks/pre-commit.hook", ".git/hooks/pre-commit")
+--- stdout ---
+
+--- stderr ---
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/user/hyperscale/buildroot/output/host/lib/python3.9/shutil.py", line 415, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/home/user/hyperscale/buildroot/output/host/lib/python3.9/shutil.py", line 261, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+FileNotFoundError: [Errno 2] No such file or directory: '.git/hooks/pre-commit'
+
+
+Build targets in project: 31
+WARNING: Project specifies a minimum meson_version '>= 0.48' but uses features which were added in newer versions:
+ * 0.54.0: {'native arg in add_languages'}
+
+gst-plugins-base 1.18.1
+
+    Plugins: app, pbtypes
+
+Option buildtype is: release [default: debugoptimized]
+Found ninja-1.10.2 at /home/user/hyperscale/buildroot/output/host/bin/ninja
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpxa4torvx
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpxa4torvx/testfile.c -o /home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/meson-private/tmpxa4torvx/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/
+programs: =/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../libexec/gcc/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../libexec/gcc/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/bin/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/bin/
+libraries: =/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/lib/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/lib/:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/.//lib/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/.//lib/:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/.//usr/lib/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/.//usr/lib/
+
+Compiler stderr:
+ 

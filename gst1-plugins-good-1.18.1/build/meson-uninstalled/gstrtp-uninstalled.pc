@@ -1,0 +1,12 @@
+prefix=/home/user/hyperscale/buildroot/output/build/gst1-plugins-good-1.18.1/build
+srcdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-good-1.18.1
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstrtp
+Description: gst-plugins-good: gstrtp
+Version: 1.18.1
+Requires.private: gstreamer-base-1.0 >=  1.18.0, gstreamer-audio-1.0 >=  1.18.0, gstreamer-video-1.0 >=  1.18.0, gstreamer-tag-1.0 >=  1.18.0, gstreamer-rtp-1.0 >=  1.18.0, gstreamer-pbutils-1.0 >=  1.18.0
+Libs: -L${prefix}/gst/rtp -lgstrtp
+Libs.private: -lm
+Cflags: -I${prefix}/gst/rtp -I${srcdir}/gst/rtp -I${prefix}/. -I${srcdir}/.

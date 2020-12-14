@@ -1,0 +1,10 @@
+# List of files installed by Meson
+# Does not contain files installed by custom scripts.
+/home/user/hyperscale/buildroot/output/target/usr/lib/gstreamer-1.0/libgstrtp.a
+/home/user/hyperscale/buildroot/output/target/usr/lib/gstreamer-1.0/libgstrtpmanager.a
+/home/user/hyperscale/buildroot/output/target/usr/lib/gstreamer-1.0/libgstudp.a
+/home/user/hyperscale/buildroot/output/target/usr/lib/gstreamer-1.0/libgstsoup.a
+/home/user/hyperscale/buildroot/output/target/usr/lib/gstreamer-1.0/pkgconfig/gstrtp.pc
+/home/user/hyperscale/buildroot/output/target/usr/lib/gstreamer-1.0/pkgconfig/gstrtpmanager.pc
+/home/user/hyperscale/buildroot/output/target/usr/lib/gstreamer-1.0/pkgconfig/gstudp.pc
+/home/user/hyperscale/buildroot/output/target/usr/lib/gstreamer-1.0/pkgconfig/gstsoup.pc

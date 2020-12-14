@@ -1,0 +1,2186 @@
+Build started at 2020-12-13T09:51:55.149184
+Main binary: /home/user/hyperscale/buildroot/output/host/bin/python3
+Build Options: -Dbuild.pkg_config_path=/home/user/hyperscale/buildroot/output/host/lib/pkgconfig -Dexamples=disabled -Dtests=disabled -Dbenchmarks=disabled -Dtools=enabled -Dgtk_doc=disabled -Dgobject-cast-checks=disabled -Dglib-asserts=disabled -Dglib-checks=disabled -Dextra-checks=disabled -Dcheck=disabled -Dtracer_hooks=true -Doption-parsing=true -Dgst_debug=true -Dgst_parse=true -Dregistry=true -Ddoc=disabled -Dintrospection=disabled -Dprefix=/usr -Dlibdir=lib -Dbuildtype=release -Ddefault_library=static '--cross-file /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1//build/cross-compilation.conf'
+Python system: Linux
+The Meson build system
+Version: 0.56.0
+Source dir: /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1
+Build dir: /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build
+Build type: cross build
+Project name: gstreamer
+Project version: 1.18.1
+None of 'CFLAGS' are defined in the environment, not changing global flags.
+None of 'LDFLAGS' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS' are defined in the environment, not changing global flags.
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc
+Is cross compiler: True.
+Sanity check compiler command line: /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/sanitycheckc.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/sanitycheckc_cross.exe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -static -pipe -D_FILE_OFFSET_BITS=64 -c
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+C compiler for the host machine: /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc (gcc 6.3.0 "csky-linux-gcc (C-SKY Tools V3.10.7 uClibc-ng-1.0.29 Linux-4.9.56 abiv1 B20190605) 6.3.0")
+C linker for the host machine: /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc ld.bfd 2.27
+None of 'CC_FOR_BUILD' are defined in the environment, not changing global flags.
+None of 'CFLAGS_FOR_BUILD' are defined in the environment, not changing global flags.
+None of 'LDFLAGS_FOR_BUILD' are defined in the environment, not changing global flags.
+None of 'CPPFLAGS_FOR_BUILD' are defined in the environment, not changing global flags.
+None of 'CC_LD_FOR_BUILD' are defined in the environment, not changing global flags.
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+None of 'CC_LD_FOR_BUILD' are defined in the environment, not changing global flags.
+Sanity check compiler command line: ccache cc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/sanitycheckc.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/sanitycheckc.exe -pipe -D_FILE_OFFSET_BITS=64
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/sanitycheckc.exe
+C compiler for the build machine: ccache cc (gcc 9.3.0 "cc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0")
+C linker for the build machine: cc ld.bfd 2.34
+None of 'AR_FOR_BUILD' are defined in the environment, not changing global flags.
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: csky
+Target machine cpu: ck610
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp5tf_2swr
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp5tf_2swr/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp5tf_2swr/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--fatal-warnings -Wl,-Bsymbolic-functions 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports link arguments -Wl,-Bsymbolic-functions: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmptqxjgo91
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmptqxjgo91/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmptqxjgo91/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -fvisibility=hidden 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fvisibility=hidden: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp6_yt3xq2
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp6_yt3xq2/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp6_yt3xq2/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -fno-strict-aliasing 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -fno-strict-aliasing: YES 
+Message: Disabling GLib cast checks
+Message: Disabling GLib asserts
+Message: Disabling GLib checks
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpvzk4zo8f
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpvzk4zo8f/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("dlfcn.h")
+          #error "Header 'dlfcn.h' could not be found"
+         #endif
+        #else
+         #include <dlfcn.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "dlfcn.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp9307a4ng
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp9307a4ng/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("inttypes.h")
+          #error "Header 'inttypes.h' could not be found"
+         #endif
+        #else
+         #include <inttypes.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "inttypes.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp2ca272z4
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp2ca272z4/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("memory.h")
+          #error "Header 'memory.h' could not be found"
+         #endif
+        #else
+         #include <memory.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "memory.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpj_g8k066
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpj_g8k066/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("poll.h")
+          #error "Header 'poll.h' could not be found"
+         #endif
+        #else
+         #include <poll.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "poll.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp40n59fhh
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp40n59fhh/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stdint.h")
+          #error "Header 'stdint.h' could not be found"
+         #endif
+        #else
+         #include <stdint.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "stdint.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpszt4vl94
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpszt4vl94/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stdio_ext.h")
+          #error "Header 'stdio_ext.h' could not be found"
+         #endif
+        #else
+         #include <stdio_ext.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "stdio_ext.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp6dhcvz_4
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp6dhcvz_4/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("strings.h")
+          #error "Header 'strings.h' could not be found"
+         #endif
+        #else
+         #include <strings.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "strings.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpwdmm__ul
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpwdmm__ul/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("string.h")
+          #error "Header 'string.h' could not be found"
+         #endif
+        #else
+         #include <string.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "string.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp51k1tp90
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp51k1tp90/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/param.h")
+          #error "Header 'sys/param.h' could not be found"
+         #endif
+        #else
+         #include <sys/param.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/param.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpyyxmnggv
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpyyxmnggv/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/poll.h")
+          #error "Header 'sys/poll.h' could not be found"
+         #endif
+        #else
+         #include <sys/poll.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/poll.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpm9n9rubb
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpm9n9rubb/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/prctl.h")
+          #error "Header 'sys/prctl.h' could not be found"
+         #endif
+        #else
+         #include <sys/prctl.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/prctl.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpz3cj4epq
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpz3cj4epq/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/socket.h")
+          #error "Header 'sys/socket.h' could not be found"
+         #endif
+        #else
+         #include <sys/socket.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/socket.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpjz6kk_rt
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpjz6kk_rt/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/stat.h")
+          #error "Header 'sys/stat.h' could not be found"
+         #endif
+        #else
+         #include <sys/stat.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/stat.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpjexrr__b
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpjexrr__b/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/times.h")
+          #error "Header 'sys/times.h' could not be found"
+         #endif
+        #else
+         #include <sys/times.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/times.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp7gtb39mt
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp7gtb39mt/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/time.h")
+          #error "Header 'sys/time.h' could not be found"
+         #endif
+        #else
+         #include <sys/time.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/time.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpxkfe7lf5
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpxkfe7lf5/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/types.h")
+          #error "Header 'sys/types.h' could not be found"
+         #endif
+        #else
+         #include <sys/types.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/types.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpx3ttbv5s
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpx3ttbv5s/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/utsname.h")
+          #error "Header 'sys/utsname.h' could not be found"
+         #endif
+        #else
+         #include <sys/utsname.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/utsname.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpsp14hpn_
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpsp14hpn_/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/wait.h")
+          #error "Header 'sys/wait.h' could not be found"
+         #endif
+        #else
+         #include <sys/wait.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/wait.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp7xkclq0z
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp7xkclq0z/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("ucontext.h")
+          #error "Header 'ucontext.h' could not be found"
+         #endif
+        #else
+         #include <ucontext.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "ucontext.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpgnjh9ycb
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpgnjh9ycb/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("unistd.h")
+          #error "Header 'unistd.h' could not be found"
+         #endif
+        #else
+         #include <unistd.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "unistd.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpfe_nil1g
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpfe_nil1g/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("valgrind/valgrind.h")
+          #error "Header 'valgrind/valgrind.h' could not be found"
+         #endif
+        #else
+         #include <valgrind/valgrind.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpfe_nil1g/testfile.c:4:12: error: #error "Header 'valgrind/valgrind.h' could not be found"
+           #error "Header 'valgrind/valgrind.h' could not be found"
+            ^~~~~
+
+Has header "valgrind/valgrind.h" : NO 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpa996fwj8
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpa996fwj8/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/resource.h")
+          #error "Header 'sys/resource.h' could not be found"
+         #endif
+        #else
+         #include <sys/resource.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/resource.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpy0_d0dy5
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpy0_d0dy5/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/uio.h")
+          #error "Header 'sys/uio.h' could not be found"
+         #endif
+        #else
+         #include <sys/uio.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "sys/uio.h" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpj035fnbv
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpj035fnbv/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpj035fnbv/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <time.h>
+        void bar(void) {
+            struct tm foo;
+            foo.tm_gmtoff;
+
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking whether type "struct tm" has member "tm_gmtoff" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpacosdd0m
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpacosdd0m/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpacosdd0m/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define gmtime_r meson_disable_define_of_gmtime_r
+        
+        #include <limits.h>
+        #undef gmtime_r
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char gmtime_r (void);
+        
+        #if defined __stub_gmtime_r || defined __stub___gmtime_r
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return gmtime_r ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "gmtime_r" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp8ce0rx4p
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp8ce0rx4p/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp8ce0rx4p/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define sigaction meson_disable_define_of_sigaction
+        
+        #include <limits.h>
+        #undef sigaction
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char sigaction (void);
+        
+        #if defined __stub_sigaction || defined __stub___sigaction
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return sigaction ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "sigaction" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpdb33_so7
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpdb33_so7/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpdb33_so7/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define getrusage meson_disable_define_of_getrusage
+        
+        #include <limits.h>
+        #undef getrusage
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getrusage (void);
+        
+        #if defined __stub_getrusage || defined __stub___getrusage
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return getrusage ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getrusage" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb_w3re6o
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb_w3re6o/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb_w3re6o/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define fseeko meson_disable_define_of_fseeko
+        
+        #include <limits.h>
+        #undef fseeko
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char fseeko (void);
+        
+        #if defined __stub_fseeko || defined __stub___fseeko
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return fseeko ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "fseeko" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpsbeb_syq
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpsbeb_syq/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpsbeb_syq/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define ftello meson_disable_define_of_ftello
+        
+        #include <limits.h>
+        #undef ftello
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char ftello (void);
+        
+        #if defined __stub_ftello || defined __stub___ftello
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return ftello ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "ftello" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpop3c_uil
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpop3c_uil/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpop3c_uil/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define poll meson_disable_define_of_poll
+        
+        #include <limits.h>
+        #undef poll
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char poll (void);
+        
+        #if defined __stub_poll || defined __stub___poll
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return poll ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "poll" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp234q_1ix
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp234q_1ix/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp234q_1ix/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define ppoll meson_disable_define_of_ppoll
+        
+        #include <limits.h>
+        #undef ppoll
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char ppoll (void);
+        
+        #if defined __stub_ppoll || defined __stub___ppoll
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return ppoll ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "ppoll" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp53osxxsc
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp53osxxsc/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp53osxxsc/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define pselect meson_disable_define_of_pselect
+        
+        #include <limits.h>
+        #undef pselect
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char pselect (void);
+        
+        #if defined __stub_pselect || defined __stub___pselect
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return pselect ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "pselect" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpiwvv15nz
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpiwvv15nz/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpiwvv15nz/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define getpagesize meson_disable_define_of_getpagesize
+        
+        #include <limits.h>
+        #undef getpagesize
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getpagesize (void);
+        
+        #if defined __stub_getpagesize || defined __stub___getpagesize
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return getpagesize ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getpagesize" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp_127yk_0
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp_127yk_0/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp_127yk_0/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define clock_gettime meson_disable_define_of_clock_gettime
+        
+        #include <limits.h>
+        #undef clock_gettime
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char clock_gettime (void);
+        
+        #if defined __stub_clock_gettime || defined __stub___clock_gettime
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return clock_gettime ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "clock_gettime" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpmqehjo1t
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpmqehjo1t/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpmqehjo1t/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define strnlen meson_disable_define_of_strnlen
+        
+        #include <limits.h>
+        #undef strnlen
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strnlen (void);
+        
+        #if defined __stub_strnlen || defined __stub___strnlen
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return strnlen ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "strnlen" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpqzeio3hs
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpqzeio3hs/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpqzeio3hs/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define getline meson_disable_define_of_getline
+        
+        #include <limits.h>
+        #undef getline
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getline (void);
+        
+        #if defined __stub_getline || defined __stub___getline
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return getline ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getline" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpaeucx02w
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpaeucx02w/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpaeucx02w/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define mkstemp meson_disable_define_of_mkstemp
+        
+        #include <limits.h>
+        #undef mkstemp
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char mkstemp (void);
+        
+        #if defined __stub_mkstemp || defined __stub___mkstemp
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return mkstemp ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "mkstemp" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpcipw6js8
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpcipw6js8/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpcipw6js8/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define alarm meson_disable_define_of_alarm
+        
+        #include <limits.h>
+        #undef alarm
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char alarm (void);
+        
+        #if defined __stub_alarm || defined __stub___alarm
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return alarm ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "alarm" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp372ikzca
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp372ikzca/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp372ikzca/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define gettimeofday meson_disable_define_of_gettimeofday
+        
+        #include <limits.h>
+        #undef gettimeofday
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char gettimeofday (void);
+        
+        #if defined __stub_gettimeofday || defined __stub___gettimeofday
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return gettimeofday ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "gettimeofday" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpvdthxtkr
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpvdthxtkr/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpvdthxtkr/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include<time.h>
+#include <limits.h>
+
+        #if defined __stub_localtime_r || defined __stub___localtime_r
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &localtime_r;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpvdthxtkr/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpvdthxtkr/testfile.c:10:27: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+             long long b = (long long) a;
+                           ^
+
+Checking for function "localtime_r" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0tpuiw5f
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0tpuiw5f/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0tpuiw5f/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <pthread.h>
+               int main() {
+                 pthread_setname_np("example"); return 0;
+               }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0tpuiw5f/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0tpuiw5f/testfile.c:3:18: warning: implicit declaration of function 'pthread_setname_np' [-Wimplicit-function-declaration]
+                  pthread_setname_np("example"); return 0;
+                  ^~~~~~~~~~~~~~~~~~
+
+Checking if "pthread_setname_np(const char*)" links: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpa9qut3aq
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpa9qut3aq/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpa9qut3aq/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <pthread.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef pthread_condattr_setclock
+                pthread_condattr_setclock;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Header <pthread.h> has symbol "pthread_condattr_setclock" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp08hk7ve7
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp08hk7ve7/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp08hk7ve7/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #include <pthread.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef pthread_cond_timedwait_relative_np
+                pthread_cond_timedwait_relative_np;
+            #endif
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp08hk7ve7/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp08hk7ve7/testfile.c:6:17: error: 'pthread_cond_timedwait_relative_np' undeclared (first use in this function)
+                 pthread_cond_timedwait_relative_np;
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp08hk7ve7/testfile.c:6:17: note: each undeclared identifier is reported only once for each function it appears in
+
+Header <pthread.h> has symbol "pthread_cond_timedwait_relative_np" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpqxtvtc0r
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpqxtvtc0r/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpqxtvtc0r/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <linux/futex.h>
+               #include <sys/syscall.h>
+               #include <unistd.h>
+               int main (int argc, char ** argv) {
+                 syscall (__NR_futex, NULL, FUTEX_WAKE, FUTEX_WAIT);
+                 return 0;
+               }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "futex(2) system call" links: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp1sgfrk3i
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp1sgfrk3i/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp1sgfrk3i/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <time.h>
+#include <unistd.h>
+#if !defined(_POSIX_TIMERS) || _POSIX_TIMERS < 0 || !defined(CLOCK_REALTIME)
+#error Either _POSIX_TIMERS or CLOCK_REALTIME not defined
+#endif
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "posix timers from time.h" compiles: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpa5n3rtos
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpa5n3rtos/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpa5n3rtos/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <time.h>
+#include <unistd.h>
+#if !defined(_POSIX_MONOTONIC_CLOCK) || _POSIX_MONOTONIC_CLOCK < 0 || !defined(CLOCK_MONOTONIC)
+#error Either _POSIX_MONOTONIC_CLOCK or CLOCK_MONOTONIC not defined
+#endif
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "monotonic clock from time.h" compiles: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpkkrg54xc
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpkkrg54xc/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpkkrg54xc/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ int main() {
+static __uint128_t v1 = 100;
+static __uint128_t v2 = 10;
+static __uint128_t u;
+u = v1 / v2;
+}
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpkkrg54xc/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpkkrg54xc/testfile.c:2:8: error: unknown type name '__uint128_t'
+ static __uint128_t v1 = 100;
+        ^~~~~~~~~~~
+/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpkkrg54xc/testfile.c:3:8: error: unknown type name '__uint128_t'
+ static __uint128_t v2 = 10;
+        ^~~~~~~~~~~
+/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpkkrg54xc/testfile.c:4:8: error: unknown type name '__uint128_t'
+ static __uint128_t u;
+        ^~~~~~~~~~~
+
+Checking if "__uint128_t available" compiles: NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp5jbotmod
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp5jbotmod/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp5jbotmod/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define getpid meson_disable_define_of_getpid
+        
+        #include <limits.h>
+        #undef getpid
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getpid (void);
+        
+        #if defined __stub_getpid || defined __stub___getpid
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return getpid ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "getpid" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp6aaxg99y
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp6aaxg99y/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp6aaxg99y/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define strdup meson_disable_define_of_strdup
+        
+        #include <limits.h>
+        #undef strdup
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strdup (void);
+        
+        #if defined __stub_strdup || defined __stub___strdup
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return strdup ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp6aaxg99y/testfile.c:10:14: warning: conflicting types for built-in function 'strdup'
+         char strdup (void);
+              ^~~~~~
+
+Checking for function "strdup" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp7unohgl7
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp7unohgl7/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp7unohgl7/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define strsignal meson_disable_define_of_strsignal
+        
+        #include <limits.h>
+        #undef strsignal
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strsignal (void);
+        
+        #if defined __stub_strsignal || defined __stub___strsignal
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return strsignal ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "strsignal" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpn6plalk2
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpn6plalk2/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpn6plalk2/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <time.h>
+        void bar(void) {
+            sizeof(clockid_t);
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for type "clockid_t" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp175bt0us
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp175bt0us/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp175bt0us/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <time.h>
+        void bar(void) {
+            sizeof(timer_t);
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for type "timer_t" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpu7o_ti0a
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpu7o_ti0a/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpu7o_ti0a/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <time.h>
+        void bar(void) {
+            struct timespec foo;
+            foo.tv_sec;
+foo.tv_nsec;
+
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking whether type "struct timespec" has members "tv_sec", "tv_nsec" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpef1c7du3
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpef1c7du3/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpef1c7du3/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <time.h>
+        void bar(void) {
+            struct itimerspec foo;
+            foo.it_interval;
+foo.it_value;
+
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking whether type "struct itimerspec" has members "it_interval", "it_value" : YES 
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary for 1 specified from cross file, native file, or env var as ['/home/user/hyperscale/buildroot/output/host/bin/pkgconf']
+Found pkg-config: /home/user/hyperscale/buildroot/output/host/bin/pkgconf (1.6.1)
+Determining dependency 'libunwind' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion libunwind` -> 1
+
+CMake binary for MachineChoice.BUILD is not cached
+None of 'CMAKE_FOR_BUILD' are defined in the environment, not changing global flags.
+CMake binary missing from cross or native file, or env var undefined.
+Trying a default CMake fallback at cmake
+Found CMake: /usr/bin/cmake (3.16.3)
+None of 'CMAKE_PREFIX_PATH_FOR_BUILD' are defined in the environment, not changing global flags.
+Extracting basic cmake information
+Try CMake generator: auto
+Calling CMake (['/usr/bin/cmake']) in /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/cmake_libunwind with:
+  - "--trace"
+  - "--trace-expand"
+  - "--no-warn-unused-cli"
+  - "--trace-redirect=cmake_trace.txt"
+  - "-DCMAKE_TOOLCHAIN_FILE=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/cmake_libunwind/CMakeMesonToolchainFile.cmake"
+  - "."
+  -- Module search paths:    ['/', '/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot', '/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/opt', '/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr', '/opt', '/usr', '/usr/local']
+  -- CMake root:             /usr/share/cmake-3.16
+  -- CMake architectures:    ['i386-linux-gnu', 'x86_64-linux-gnu']
+  -- CMake lib search paths: ['lib', 'lib32', 'lib64', 'libx32', 'share', 'lib/i386-linux-gnu', 'lib/x86_64-linux-gnu']
+Preliminary CMake check failed. Aborting.
+Run-time dependency libunwind found: NO (tried pkgconfig and cmake)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libdw' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion libdw` -> 1
+
+CMake binary for MachineChoice.BUILD is cached.
+None of 'CMAKE_PREFIX_PATH_FOR_BUILD' are defined in the environment, not changing global flags.
+Preliminary CMake check failed. Aborting.
+Run-time dependency libdw found: NO (tried pkgconfig and cmake)
+WARNING: Project targeting '>= 0.48' but tried to use feature introduced in '0.50.0': required arg in compiler.has_header.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmprad_16qa
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmprad_16qa/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("dbghelp.h")
+          #error "Header 'dbghelp.h' could not be found"
+         #endif
+        #else
+         #include <dbghelp.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmprad_16qa/testfile.c:4:12: error: #error "Header 'dbghelp.h' could not be found"
+           #error "Header 'dbghelp.h' could not be found"
+            ^~~~~
+
+Has header "dbghelp.h" : NO 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpwm6pw2f0
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpwm6pw2f0/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpwm6pw2f0/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ 
+        #define backtrace meson_disable_define_of_backtrace
+        
+        #include <limits.h>
+        #undef backtrace
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char backtrace (void);
+        
+        #if defined __stub_backtrace || defined __stub___backtrace
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return backtrace ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "backtrace" : YES 
+Message: Minimal support for stack traces, no source info.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpyq5p3s3v
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpyq5p3s3v/testfile.c -pipe -E -P -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -P -O0 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("execinfo.h")
+          #error "Header 'execinfo.h' could not be found"
+         #endif
+        #else
+         #include <execinfo.h>
+        #endif
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Has header "execinfo.h" : YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb3g0xe3b
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb3g0xe3b/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb3g0xe3b/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <execinfo.h>
+#include <limits.h>
+
+        #if defined __stub_backtrace || defined __stub___backtrace
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &backtrace;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb3g0xe3b/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb3g0xe3b/testfile.c:10:27: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+             long long b = (long long) a;
+                           ^
+
+Checking for function "backtrace" : YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpqtbbcvtv
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpqtbbcvtv/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpqtbbcvtv/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-declarations 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-declarations: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpmwlpqum9
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpmwlpqum9/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpmwlpqum9/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-prototypes 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-prototypes: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpiokc_lsh
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpiokc_lsh/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpiokc_lsh/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wredundant-decls 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wredundant-decls: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmptwgoig42
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmptwgoig42/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmptwgoig42/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wundef 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wundef: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpsvk_ryr_
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpsvk_ryr_/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpsvk_ryr_/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wwrite-strings 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wwrite-strings: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpre8yzsxj
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpre8yzsxj/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpre8yzsxj/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wformat 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wformat: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmppqcysbhs
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmppqcysbhs/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmppqcysbhs/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wformat-nonliteral 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1: warning: -Wformat-nonliteral ignored without -Wformat [-Wformat-nonliteral]
+
+Compiler for C supports arguments -Wformat-nonliteral: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp34p4pghk
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp34p4pghk/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp34p4pghk/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wformat-security 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ cc1: warning: -Wformat-security ignored without -Wformat [-Wformat-security]
+
+Compiler for C supports arguments -Wformat-security: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb3as_7oo
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb3as_7oo/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb3as_7oo/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wold-style-definition 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wold-style-definition: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpz7ytjm7b
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpz7ytjm7b/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpz7ytjm7b/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Winit-self 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Winit-self: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpy4blrgva
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpy4blrgva/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpy4blrgva/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wmissing-include-dirs 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wmissing-include-dirs: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpfjb2_s2q
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpfjb2_s2q/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpfjb2_s2q/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Waddress 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Waddress: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpw1ee6cat
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpw1ee6cat/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpw1ee6cat/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Waggregate-return 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Waggregate-return: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp19pcmvsc
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp19pcmvsc/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp19pcmvsc/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wmultichar -Wno-multichar 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-multichar: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpj4up0bt6
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpj4up0bt6/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpj4up0bt6/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wdeclaration-after-statement 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wdeclaration-after-statement: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0u7ib8of
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0u7ib8of/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0u7ib8of/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wvla 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wvla: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpk91fyd4t
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpk91fyd4t/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpk91fyd4t/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wpointer-arith 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wpointer-arith: YES 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpa8azt6ru
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpa8azt6ru/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpa8azt6ru/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lgmp -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/bin/ld: cannot find -lgmp
+collect2: error: ld returned 1 exit status
+
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0aycte1k
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0aycte1k/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0aycte1k/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) {
+            void * something;
+            return 0;
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp5nq7hjsc
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp5nq7hjsc/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp5nq7hjsc/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) >= 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpg5rfro60
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpg5rfro60/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpg5rfro60/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) > 0)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpehm1hfro
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpehm1hfro/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpehm1hfro/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) > 1)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpavzle0_k
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpavzle0_k/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpavzle0_k/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) > 3)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpf0dlnov3
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpf0dlnov3/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpf0dlnov3/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) > 7)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpf0dlnov3/testfile.c: In function 'main':
+/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpf0dlnov3/testfile.c:3:37: error: size of array 'a' is negative
+         int main(void) { static int a[1-2*!(sizeof(void *) > 7)]; a[0]=0; return 0; }
+                                     ^
+
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0f95kwlo
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0f95kwlo/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp0f95kwlo/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) <= 5)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpg40mzydq
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpg40mzydq/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpg40mzydq/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <stdio.h>
+        
+        int main(void) { static int a[1-2*!(sizeof(void *) <= 4)]; a[0]=0; return 0; }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp_7qbo9zv
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp_7qbo9zv/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmp_7qbo9zv/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ install: /home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/
+programs: =/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../libexec/gcc/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../libexec/gcc/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/bin/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/bin/
+libraries: =/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/lib/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/lib/:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/.//lib/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/.//lib/:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/.//usr/lib/csky-linux-uclibc/6.3.0/:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/.//usr/lib/
+
+Compiler stderr:
+ 
+Library gmp found: NO
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpxns3_iza
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpxns3_iza/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpxns3_iza/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lgsl -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/bin/ld: cannot find -lgsl
+collect2: error: ld returned 1 exit status
+
+Library gsl found: NO
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpx2f1w02_
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpx2f1w02_/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpx2f1w02_/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lgslcblas -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/nationalchip/Toolchain/csky-linux-uclibc-tools-i386-uclibc-linux-4.9.56-20190605/bin/../lib/gcc/csky-linux-uclibc/6.3.0/../../../../csky-linux-uclibc/bin/ld: cannot find -lgslcblas
+collect2: error: ld returned 1 exit status
+
+Library gslcblas found: NO
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpgrrfs2ox
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpgrrfs2ox/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpgrrfs2ox/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -ldl -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library dl found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpxeysmytu
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpxeysmytu/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpxeysmytu/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -ldl -Wl,--end-group 
+
+Code:
+ 
+        #define dladdr meson_disable_define_of_dladdr
+        
+        #include <limits.h>
+        #undef dladdr
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dladdr (void);
+        
+        #if defined __stub_dladdr || defined __stub___dladdr
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return dladdr ();
+        }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking for function "dladdr" with dependency -ldl: YES 
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'glib-2.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion glib-2.0` -> 0
+2.64.4
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags glib-2.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf glib-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf glib-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency glib-2.0 found: YES 2.64.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gobject-2.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion gobject-2.0` -> 0
+2.64.4
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags gobject-2.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gobject-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgobject-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gobject-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgobject-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency gobject-2.0 found: YES 2.64.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gmodule-2.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion gmodule-2.0` -> 0
+2.64.4
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags gmodule-2.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -pthread -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gmodule-2.0 --libs --static` -> 0
+-Wl,--export-dynamic -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gmodule-2.0 --libs --static` -> 0
+-Wl,--export-dynamic -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency gmodule-2.0 found: YES 2.64.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gio-2.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion gio-2.0` -> 0
+2.64.4
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags gio-2.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -pthread -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gio-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgio-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lz
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gio-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lgio-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lz
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency gio-2.0 found: YES 2.64.4
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'gio-unix-2.0' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion gio-unix-2.0` -> 0
+2.64.4
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --cflags gio-unix-2.0` -> 0
+-I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/gio-unix-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/include/glib-2.0 -I/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/glib-2.0/include -pthread -DPCRE_STATIC
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gio-unix-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgio-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lz
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf gio-unix-2.0 --libs --static` -> 0
+-L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgio-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -lgobject-2.0 -pthread -lglib-2.0 -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lffi -lgmodule-2.0 -pthread -lglib-2.0 -pthread -liconv -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lpcre -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -L/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib -lz
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Run-time dependency gio-unix-2.0 found: YES 2.64.4
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb2_t9_qj
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb2_t9_qj/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpb2_t9_qj/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lm -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpwe0f_88y
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpwe0f_88y/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpwe0f_88y/output.exe -pipe -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wl,--start-group -lrt -Wl,--end-group -Wl,--allow-shlib-undefined 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library rt found: YES
+Program g-ir-scanner skipped: feature introspection disabled
+Program python3 found: YES (/home/user/hyperscale/buildroot/output/host/bin/python3)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'bash-completion' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion bash-completion` -> 1
+
+CMake binary for MachineChoice.BUILD is cached.
+None of 'CMAKE_PREFIX_PATH_FOR_BUILD' are defined in the environment, not changing global flags.
+
+Determining dependency 'bash-completion' with CMake executable '/usr/bin/cmake'
+Try CMake generator: auto
+Calling CMake (['/usr/bin/cmake']) in /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/cmake_bash-completion with:
+  - "-DNAME=bash-completion"
+  - "-DARCHS=i386-linux-gnu;x86_64-linux-gnu"
+  - "-DCOMPS="
+  - "--trace"
+  - "--trace-expand"
+  - "--no-warn-unused-cli"
+  - "--trace-redirect=cmake_trace.txt"
+  - "-DCMAKE_TOOLCHAIN_FILE=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/cmake_bash-completion/CMakeMesonToolchainFile.cmake"
+  - "."
+Dependency bash-completion not found: CMake: failed to guess a CMake target for bash-completion.
+Try to explicitly specify one or more targets with the "modules" property.
+Valid targets are:
+[]
+Run-time dependency bash-completion found: NO (tried pkgconfig)
+Configuring gstconfig.h using configuration
+Configuring gstversion.h using configuration
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program flex found: YES (/home/user/hyperscale/buildroot/output/host/bin/flex)
+Program get_flex_version.py found: YES (/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/gst/parse/get_flex_version.py)
+Running command: /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/gst/parse/get_flex_version.py /home/user/hyperscale/buildroot/output/host/bin/flex
+--- stdout ---
+2.6.4
+
+--- stderr ---
+
+
+Message: flex version 2.6.4 >= 2.5.31: YES
+Configuring gen_lex.py using configuration
+Program bison found: YES (/home/user/hyperscale/buildroot/output/host/bin/bison)
+Running command: /home/user/hyperscale/buildroot/output/host/bin/bison --version
+--- stdout ---
+bison (GNU Bison) 3.7.1
+Written by Robert Corbett and Richard Stallman.
+
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+--- stderr ---
+
+
+Message: bison version 3.7.1 >= 2.4: YES
+Configuring grammar.y using configuration
+Configuring gen_grammar.py using configuration
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpxt20aycd
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpxt20aycd/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpxt20aycd/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 -Wformat-nonliteral -Wno-format-nonliteral 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler for C supports arguments -Wno-format-nonliteral: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpl49zg39w
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpl49zg39w/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpl49zg39w/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ long long ll = 1LL;
+                  int i = 63;
+                  int some_func (void) {
+                    long long llmax = (long long) -1;
+                    return ll << i | ll >> i | llmax / ll | llmax % ll;
+                  }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "long long" compiles: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpl65ovbkl
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpl65ovbkl/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpl65ovbkl/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <sys/types.h>
+                  #include <inttypes.h>
+                  uintmax_t i = (uintmax_t) -1;
+               
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "uintmax_t in inttypes.h" compiles: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmplt5rah6f
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmplt5rah6f/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmplt5rah6f/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <sys/types.h>
+                  #include <stdint.h>
+                  uintmax_t i = (uintmax_t) -1;
+               
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "uintmax_t in stdint.h" compiles: YES 
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Program glib-mkenums found: YES (/home/user/hyperscale/buildroot/output/host/bin/glib-mkenums)
+Message: PTP supported on linux.
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpjx9d8uq6
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpjx9d8uq6/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpjx9d8uq6/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <sys/ioctl.h>
+                    #include <net/if.h>
+                    int some_func (void) {
+                      struct ifreq ifr;
+                      struct ifconf ifc;
+                      ioctl(0, SIOCGIFCONF, &ifc);
+                      ioctl(0, SIOCGIFFLAGS, &ifr);
+                      ioctl(0, SIOCGIFHWADDR, &ifr);
+                      return ifr.ifr_hwaddr.sa_data[0];
+                    }
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Checking if "SIOCGIFCONF, SIOCGIFFLAGS and SIOCGIFHWADDR available" compiles: YES 
+Running compile:
+Working directory:  /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpctwi63nu
+Command line:  /home/user/hyperscale/buildroot/output/host/bin/csky-linux-gcc /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpctwi63nu/testfile.c -o /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpctwi63nu/output.obj -pipe -c -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -Os -static -D_FILE_OFFSET_BITS=64 -O0 
+
+Code:
+ #include <ifaddrs.h>
+                    #include <net/if.h>
+                    #include <net/if_dl.h>
+                    int some_func (void) {
+                      struct ifaddrs *ifaddr;
+                      getifaddrs(&ifaddr);
+                      return (ifaddr->ifa_flags & IFF_LOOPBACK) && ifaddr->ifa_addr->sa_family != AF_LINK;
+                    }
+Compiler stdout:
+ 
+Compiler stderr:
+ /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/tmpctwi63nu/testfile.c:3:43: fatal error: net/if_dl.h: No such file or directory
+                     #include <net/if_dl.h>
+                                           ^
+compilation terminated.
+
+Checking if "getifaddrs() and AF_LINK available" compiles: NO 
+Program setcap found: YES (/usr/sbin/setcap)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libcap' with pkg-config executable '/home/user/hyperscale/buildroot/output/host/bin/pkgconf'
+PKG_CONFIG_PATH: 
+PKG_CONFIG_LIBDIR: /home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/lib/pkgconfig:/home/user/hyperscale/buildroot/output/host/csky-buildroot-linux-uclibcabiv1/sysroot/usr/share/pkgconfig
+Called `/home/user/hyperscale/buildroot/output/host/bin/pkgconf --modversion libcap` -> 1
+
+CMake binary for MachineChoice.BUILD is cached.
+None of 'CMAKE_PREFIX_PATH_FOR_BUILD' are defined in the environment, not changing global flags.
+Preliminary CMake check failed. Aborting.
+Run-time dependency libcap found: NO (tried pkgconfig and cmake)
+Message: How to install gst-ptp-helper: setuid-root
+Program ptp_helper_post_install.sh found: YES (/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/libs/gst/helpers/ptp_helper_post_install.sh)
+Configuring libgstreamer-1.0.so.0.1801.0-gdb.py using configuration
+Run-time dependency threads found: YES
+Configuring gstreamer-base-1.0.pc using configuration
+Configuring gstreamer-base-1.0-uninstalled.pc using configuration
+Configuring gstreamer-controller-1.0.pc using configuration
+Configuring gstreamer-controller-1.0-uninstalled.pc using configuration
+Configuring gstreamer-net-1.0.pc using configuration
+Configuring gstreamer-net-1.0-uninstalled.pc using configuration
+Configuring gstreamer-1.0.pc using configuration
+Configuring gstreamer-1.0-uninstalled.pc using configuration
+Message: Documentation not built as building it while cross building is not supported yet.
+Program xgettext found: YES (/home/user/hyperscale/buildroot/output/host/bin/xgettext)
+Program dist-translations.py found: YES (/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/scripts/dist-translations.py)
+Program scripts/extract-release-date-from-doap-file.py found: YES (/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/scripts/extract-release-date-from-doap-file.py)
+Running command: /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/scripts/extract-release-date-from-doap-file.py 1.18.1 /home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/gstreamer.doap
+--- stdout ---
+2020-10-26
+
+--- stderr ---
+
+
+Message: Package release date: 2020-10-26
+Configuring config.h using configuration
+Running command: /home/user/hyperscale/buildroot/output/host/bin/python3 -c import shutil; shutil.copy("hooks/pre-commit.hook", ".git/hooks/pre-commit")
+--- stdout ---
+
+--- stderr ---
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/user/hyperscale/buildroot/output/host/lib/python3.9/shutil.py", line 415, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+  File "/home/user/hyperscale/buildroot/output/host/lib/python3.9/shutil.py", line 261, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+FileNotFoundError: [Errno 2] No such file or directory: '.git/hooks/pre-commit'
+
+
+Build targets in project: 23
+WARNING: Project specifies a minimum meson_version '>= 0.48' but uses features which were added in newer versions:
+ * 0.50.0: {'required arg in compiler.has_header'}
+
+gstreamer 1.18.1
+
+    Plugins: coreelements, coretracers
+
+Option buildtype is: release [default: debugoptimized]
+Found ninja-1.10.2 at /home/user/hyperscale/buildroot/output/host/bin/ninja

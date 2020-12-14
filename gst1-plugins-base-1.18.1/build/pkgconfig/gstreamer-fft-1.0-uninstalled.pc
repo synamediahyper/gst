@@ -1,0 +1,16 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/gst-libs/gst/fft
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/pkgconfig/../gst-libs
+girdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/pkgconfig/../gst-libs/gst/fft
+typelibdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/pkgconfig/../gst-libs/gst/fft
+
+Name: GStreamer FFT Library, Uninstalled
+Description: FFT implementation, uninstalled
+Version: 1.18.1
+Requires: gstreamer-1.0
+Libs: -L${libdir} -lgstfft-1.0 -lm
+Cflags: -I/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/pkgconfig/../gst-libs -I/home/user/hyperscale/buildroot/output/build/gst1-plugins-base-1.18.1/build/pkgconfig/../gst-libs
+

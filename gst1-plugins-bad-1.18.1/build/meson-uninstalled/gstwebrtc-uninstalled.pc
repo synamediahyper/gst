@@ -1,0 +1,11 @@
+prefix=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build
+srcdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstwebrtc
+Description: gst-plugins-bad: gstwebrtc
+Version: 1.18.1
+Requires.private: gstreamer-base-1.0 >=  1.18.0, gstreamer-sdp-1.0 >=  1.18.0, gio-2.0, nice >= 0.1.14, gstreamer-app-1.0 >=  1.18.0
+Libs: -L${prefix}/ext/webrtc -lgstwebrtc -L${prefix}/gst-libs/gst/sctp -lgstsctp-1.0 -L${prefix}/gst-libs/gst/webrtc -lgstwebrtc-1.0
+Cflags: -I${prefix}/ext/webrtc -I${srcdir}/ext/webrtc -I${prefix}/. -I${srcdir}/. -I${prefix}/gst-libs -I${srcdir}/gst-libs -I${prefix}/gst-libs/gst/sctp -I${srcdir}/gst-libs/gst/sctp -I${prefix}/gst-libs/gst/webrtc -I${srcdir}/gst-libs/gst/webrtc

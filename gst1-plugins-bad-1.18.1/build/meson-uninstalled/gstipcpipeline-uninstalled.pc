@@ -1,0 +1,11 @@
+prefix=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build
+srcdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstipcpipeline
+Description: gst-plugins-bad: gstipcpipeline
+Version: 1.18.1
+Requires.private: gstreamer-base-1.0 >=  1.18.0
+Libs: -L${prefix}/sys/ipcpipeline -lgstipcpipeline
+Cflags: -I${prefix}/sys/ipcpipeline -I${srcdir}/sys/ipcpipeline -I${prefix}/. -I${srcdir}/.

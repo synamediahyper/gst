@@ -1,0 +1,12 @@
+prefix=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build
+srcdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstsctp
+Description: gst-plugins-bad: gstsctp
+Version: 1.18.1
+Requires.private: gstreamer-base-1.0 >=  1.18.0, gstreamer-1.0 >=  1.18.0
+Libs: -L${prefix}/ext/sctp -lgstsctp -L${prefix}/gst-libs/gst/sctp -lgstsctp-1.0
+Libs.private: -pthread
+Cflags: -I${prefix}/ext/sctp -I${srcdir}/ext/sctp -I${prefix}/. -I${srcdir}/. -I${prefix}/ext/sctp/usrsctp/usrsctplib/. -I${srcdir}/ext/sctp/usrsctp/usrsctplib/. -I${prefix}/ext/sctp/usrsctp/usrsctplib/netinet -I${srcdir}/ext/sctp/usrsctp/usrsctplib/netinet -I${prefix}/ext/sctp/usrsctp/usrsctplib/netinet6 -I${srcdir}/ext/sctp/usrsctp/usrsctplib/netinet6 -I${prefix}/gst-libs -I${srcdir}/gst-libs -I${prefix}/gst-libs/gst/sctp -I${srcdir}/gst-libs/gst/sctp

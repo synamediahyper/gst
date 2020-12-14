@@ -1,0 +1,2 @@
+/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/cmake_bash-completion/CMakeFiles/rebuild_cache.dir
+/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build/meson-private/cmake_bash-completion/CMakeFiles/edit_cache.dir

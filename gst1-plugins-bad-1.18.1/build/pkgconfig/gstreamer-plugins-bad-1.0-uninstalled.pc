@@ -1,0 +1,14 @@
+# the standard variables don't make sense for an uninstalled copy
+prefix=
+exec_prefix=
+libdir=
+# includedir is builddir because it is used to find gstconfig.h in places
+includedir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/pkgconfig/../gst-libs
+pluginsdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/pkgconfig/..
+
+Name: GStreamer Bad Plugin libraries, Uninstalled
+Description: Streaming media framework, bad plugins libraries, uninstalled
+Version: 1.18.1
+Requires: gstreamer-1.0
+Libs: -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/gst-libs/gst/audio -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/gst-libs/gst/basecamerabinsrc -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/gst-libs/gst/codecparsers -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/gst-libs/gst/insertbin -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/gst-libs/gst/interfaces -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/gst-libs/gst/mpegts -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/gst-libs/gst/player -L/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/gst-libs/gst/webrtc
+Cflags: -I/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/pkgconfig/../gst-libs -I/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build/pkgconfig/../gst-libs

@@ -1,0 +1,12 @@
+prefix=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1/build
+srcdir=/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstcoreelements
+Description: gstreamer: gstcoreelements
+Version: 1.18.1
+Requires.private: gobject-2.0, gmodule-2.0, glib-2.0 >= 2.44.0
+Libs: -L${prefix}/plugins/elements -lgstcoreelements -L${prefix}/libs/gst/base -lgstbase-1.0 -L${prefix}/gst -lgstreamer-1.0
+Libs.private: -lm -ldl
+Cflags: -I${prefix}/plugins/elements -I${srcdir}/plugins/elements -I${prefix}/. -I${srcdir}/. -I${prefix}/libs -I${srcdir}/libs -I${prefix}/libs/gst/base -I${srcdir}/libs/gst/base -I${prefix}/gst -I${srcdir}/gst -I${prefix}/gst/parse -I${srcdir}/gst/parse

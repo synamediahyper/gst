@@ -1,0 +1,27 @@
+[options]
+build.pkg_config_path = /home/user/hyperscale/buildroot/output/host/lib/pkgconfig
+examples = disabled
+tests = disabled
+benchmarks = disabled
+tools = enabled
+gtk_doc = disabled
+gobject-cast-checks = disabled
+glib-asserts = disabled
+glib-checks = disabled
+extra-checks = disabled
+check = disabled
+tracer_hooks = true
+option-parsing = true
+gst_debug = true
+gst_parse = true
+registry = true
+doc = disabled
+introspection = disabled
+prefix = /usr
+libdir = lib
+buildtype = release
+default_library = static
+
+[properties]
+cross_file = ['/home/user/hyperscale/buildroot/output/build/gstreamer1-1.18.1//build/cross-compilation.conf']
+

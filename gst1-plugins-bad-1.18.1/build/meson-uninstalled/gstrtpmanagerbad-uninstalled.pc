@@ -1,0 +1,11 @@
+prefix=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1/build
+srcdir=/home/user/hyperscale/buildroot/output/build/gst1-plugins-bad-1.18.1
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstrtpmanagerbad
+Description: gst-plugins-bad: gstrtpmanagerbad
+Version: 1.18.1
+Requires.private: gio-2.0, gstreamer-1.0 >=  1.18.0, gstreamer-base-1.0 >=  1.18.0, gstreamer-rtp-1.0 >=  1.18.0, gstreamer-net-1.0 >=  1.18.0, gstreamer-controller-1.0 >=  1.18.0
+Libs: -L${prefix}/gst/rtp -lgstrtpmanagerbad
+Cflags: -I${prefix}/gst/rtp -I${srcdir}/gst/rtp -I${prefix}/. -I${srcdir}/.
